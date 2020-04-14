@@ -1,0 +1,60 @@
+/* Begin Reset */
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* End Reset */
+
+/* Begin wrapper */
+.wrapper {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+/* End wrapper */
+
+
+/* Begin row*/
+.row {
+  margin: 20px 10px;
+}
+/* End row */
+
+
+/* Begin product-block */
+.product-block {
+  display: inline-block;
+  width: 300px;
+  position: relative; /* important for correct positioning */
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.product-block .discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 3px;
+}
+
+.product-block .bg-red {
+  background-color: red;
+}
+
+/* begin SHOW HEART ON HOVER */
+.product-block .heart {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+  color: red;
+}
+
+.product-block:hover  .heart {
+  display: inline-block;
+}
+/* END SHOW HEART ON HOVER */
